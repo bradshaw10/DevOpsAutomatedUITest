@@ -18,7 +18,7 @@ namespace CreditCards.UITests
             using (IWebDriver driver = new ChromeDriver())
             {
                 driver.Navigate().GoToUrl(homeUrl);
-
+              
                 DemoHelper.Pause();
 
                 Assert.Equal(homeTitle, driver.Title);
@@ -47,20 +47,23 @@ namespace CreditCards.UITests
         {
             using (IWebDriver driver = new ChromeDriver())
             {
-                driver.Navigate().GoToUrl(aboutUrl);
+                driver.Navigate().GoToUrl(homeUrl);
+                IWebElement generationTokenElement =
+                   driver.FindElement(By.Id("GenerationToken"));
+                string initialToken = generationTokenElement.Text;
                 DemoHelper.Pause();
 
-                driver.Navigate().GoToUrl(homeUrl);
+                driver.Navigate().GoToUrl(aboutUrl);
                 DemoHelper.Pause();
 
                 driver.Navigate().Back();
                 DemoHelper.Pause();
 
-                driver.Navigate().Forward();
-                DemoHelper.Pause();
-
                 Assert.Equal(homeTitle, driver.Title);
                 Assert.Equal(homeUrl, driver.Url);
+
+                string reloadedToken = driver.FindElement(By.Id("GenerationToken")).Text;
+                Assert.NotEqual(initialToken, reloadedToken);
             }
         }
 
