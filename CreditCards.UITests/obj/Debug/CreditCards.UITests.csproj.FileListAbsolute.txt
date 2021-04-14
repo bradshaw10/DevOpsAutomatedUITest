@@ -36,3 +36,5 @@ C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\obj\Debug\Cr
 C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\obj\Debug\CreditCards.UITests.csproj.CopyComplete
 C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\obj\Debug\CreditCards.UITests.dll
 C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\obj\Debug\CreditCards.UITests.pdb
+C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\bin\Debug\WebDriver.Support.dll
+C:\Users\EBradshaw\source\repos\SeleniumTesting\CreditCards.UITests\bin\Debug\WebDriver.Support.xml
