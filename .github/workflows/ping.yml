@@ -3,9 +3,10 @@ env:
   owner: bradshaw10
   repo: SeleniumTesting
 on: 
-  workflow_dispatch:
+  repository_dispatch:
+    types: [run-ping]
 jobs:
-  build:
+  ping:
 
     runs-on: ubuntu-latest
 
