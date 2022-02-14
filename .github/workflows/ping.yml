@@ -3,8 +3,8 @@ env:
   owner: bradshaw10
   repo: SeleniumTesting
 on: 
-  repository_dispatch:
-    types: [run-ping]
+  [repository_dispatch]
+  
 jobs:
   ping:
 
