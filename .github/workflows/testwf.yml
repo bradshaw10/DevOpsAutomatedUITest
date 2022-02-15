@@ -1,8 +1,8 @@
 name: testwf
 
 on:
-  	repository_dispatch:
-      types: [backend_automation]
+  repository_dispatch:
+    types: [backend_automation]
 
 jobs:
   build:
