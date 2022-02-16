@@ -21,7 +21,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore Nuget Packages
-        run: nuget restore DevOpsAutomatedUITest\CreditCards.UITests.csproj
+        run: nuget restore DevOpsAutomatedUITest/CreditCards.UITests.csproj
         
       - name: Build the solution
         run: msbuild DevOpsAutomatedUITest\CreditCards.UITests.csproj
