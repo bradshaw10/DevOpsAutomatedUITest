@@ -36,5 +36,7 @@ jobs:
         
       - name: Build the solution
         run: msbuild CreditCards.sln
-        
+     
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
       
