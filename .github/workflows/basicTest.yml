@@ -19,7 +19,10 @@ jobs:
         
       - name: Setup NuGet.exe for use with actions
         uses: NuGet/setup-nuget@v1.0.5
-        
+      
+      - name: Print Folders 
+          ls
+      
       - name: Restore Nuget Packages
         run: nuget restore DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
         
