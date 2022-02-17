@@ -20,14 +20,14 @@ jobs:
       - name: Setup NuGet.exe for use with actions
         uses: NuGet/setup-nuget@v1.0.5
       
-      - name: Print Folders 
-        run: ls -R
+#       - name: Print Folders 
+#         run: ls -R
       
       - name: Restore Nuget Packages
-        run: nuget restore DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
+        run: nuget restore DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
         
       - name: Build the solution
-        run: msbuild DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
+        run: msbuild DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
      
       - name: Test
         run: dotnet test --no-build --verbosity normal
