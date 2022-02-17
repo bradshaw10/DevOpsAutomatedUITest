@@ -23,8 +23,8 @@ jobs:
 #       - name: Print Folders 
 #         run: ls -R
       
-      - name: Restore Nuget Packages
-        run: nuget restore CreditCards.sln
+#       - name: Restore Nuget Packages
+#         run: nuget restore CreditCards.sln
         
       - name: Build the solution
         run: msbuild D:\a\DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
