@@ -21,7 +21,7 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
       
       - name: Print Folders 
-          ls
+        run: ls -R
       
       - name: Restore Nuget Packages
         run: nuget restore DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
