@@ -24,7 +24,7 @@ jobs:
 #         run: ls -R
       
       - name: Restore Nuget Packages
-        run: nuget restore D:\a\DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests -OutputDirectory
+        run: nuget restore D:\a\DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests\packages.config -OutputDirectory
         
       - name: Build the solution
         run: msbuild D:\a\DevOpsAutomatedUITest\DevOpsAutomatedUITest\CreditCards.UITests\CreditCards.UITests.csproj
